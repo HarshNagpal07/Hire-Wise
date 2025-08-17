@@ -13,6 +13,7 @@
     "@emnapi/runtime": "^1.4.5",
     "@emnapi/wasi-threads": "^1.0.4",
     "@napi-rs/wasm-runtime": "^1.0.3",
+    "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-slot": "^1.2.3",
     "@tybys/wasm-util": "^0.10.0",
     "class-variance-authority": "^0.7.1",
