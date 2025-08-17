@@ -29,7 +29,16 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            {/* Creating a header */}
+            <div className="min-h-screen">{children}</div>
+            {/* Creating a footer */}
+            <footer>
+            <div>
+              <p>
+                Chlia shuru krte h
+              </p>
+            </div>
+            </footer>
           </ThemeProvider>
       </body>
     </html>
