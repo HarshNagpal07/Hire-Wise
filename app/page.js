@@ -5,8 +5,6 @@ export default function Home() {
   return <div>This is an Hire Wise
     <br/>
 
-    <Button>
-      See This
-    </Button>
+    <Button>See This</Button>
   </div>
 }
