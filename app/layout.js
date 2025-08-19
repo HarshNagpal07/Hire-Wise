@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -32,8 +32,8 @@ export default function RootLayout({ children }) {
             {/* Creating a header */}
             <div className="min-h-screen">{children}</div>
             {/* Creating a footer */}
-            <footer>
-            <div>
+            <footer className="bg-mute/50 py-12">
+            <div className="container mx-auto px-4 text-center text-gray-200">
               <p>
                 Chlia shuru krte h
               </p>
