@@ -5,8 +5,6 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="flex justify-between p-4 bg-gray-900 text-white">
-      <h1 className="text-xl font-bold">HireWise</h1>
 
       <div>
         <SignedOut>
@@ -14,10 +12,10 @@ const Header = () => {
         </SignedOut>
 
         <SignedIn>
-          <UserButton afterSignOutUrl="/" />
+          <UserButton/>
         </SignedIn>
       </div>
-    </div>
+   
   );
 };
 
