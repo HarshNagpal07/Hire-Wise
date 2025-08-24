@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.31.3",
+    "@clerk/nextjs": "^6.31.4",
     "@emnapi/core": "^1.4.5",
     "@emnapi/runtime": "^1.4.5",
     "@emnapi/wasi-threads": "^1.0.4",
