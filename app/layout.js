@@ -27,8 +27,8 @@ export default function RootLayout({ children }) {
             disableTransitionOnChange
           >
             {/* Creating a header */}
-            <Header/>
-            <div className="min-h-screen">{children}</div>
+            <Header />
+            <main className="min-h-screen">{children}</main>
             {/* Creating a footer */}
             <footer className="bg-muted/50 py-12">
             <div className="container mx-auto px-4 text-center text-gray-200">
