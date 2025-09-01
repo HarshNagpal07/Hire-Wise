@@ -15,14 +15,14 @@ const Header = () => {
         <Image 
         src="/logo.png" 
         alt="Hire Wise Logo" 
-        width={200} 
-        height={60}
+        width={300} 
+        height={70}
         className="h-12 py-1 w-auto object-contain"
         />
         </Link>
         <div>
           <SignedIn>
-            <Link>
+            <Link href={"/dashboard"}>
             <Button>
               <LayoutDashboard className="h-4 w-4"/>
               Industry Insights
