@@ -10,7 +10,13 @@ const Header = () => {
     <header>
       <nav>
          <Link href="/"> {/*Anchor tag for home page */}
-        <Image src="/logo.png" alt="Hire Wise Logo" width={200} height={60}/>
+        <Image 
+        src="/logo.png" 
+        alt="Hire Wise Logo" 
+        width={200} 
+        height={60}
+        className="h-12 py-1 w-auto object-contain"
+        />
         </Link>
       </nav>
       
