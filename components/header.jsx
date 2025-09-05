@@ -10,7 +10,7 @@ import { LayoutDashboard } from "lucide-react";
 const Header = () => {
   return (
     <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
-      <nav>
+      <nav className="container mx-auto">
          <Link href="/"> {/*Anchor tag for home page */}
         <Image 
         src="/logo.png" 
