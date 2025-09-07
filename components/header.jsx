@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
-import { ChevronDown, LayoutDashboard, StarIcon } from "lucide-react";
+import { ChevronDown, FileText, LayoutDashboard, StarIcon } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 const Header = () => {
@@ -23,7 +23,8 @@ const Header = () => {
             className="h-20 py-1 w-auto object-contain"
           />
         </Link>
-        <div>
+
+        <div className="flex items-center space-x-2 md:space-x-4">
           <SignedIn>
             <Link href={"/dashboard"}>
               <Button>
@@ -44,10 +45,14 @@ const Header = () => {
             </DropdownMenuTrigger>
 
             <DropdownMenuContent>
-              <DropdownMenuItem>Profile</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/resume"} className="flex items-center gap-2">
+                <FileText className="h-4 w-4" />
+                <span>Build Resume</span>
+                </Link>
+              </DropdownMenuItem>
               <DropdownMenuItem>Billing</DropdownMenuItem>
               <DropdownMenuItem>Team</DropdownMenuItem>
-              <DropdownMenuItem>Subscription</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
