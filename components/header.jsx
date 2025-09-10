@@ -67,9 +67,6 @@ const Header = () => {
             </DropdownMenuContent>
           </DropdownMenu>
 
-        </div>
-      </nav>
-
       <SignedOut>
         <SignInButton />
       </SignedOut>
@@ -77,6 +74,8 @@ const Header = () => {
       <SignedIn>
         <UserButton />
       </SignedIn>
+        </div>
+      </nav>
     </header>
   );
 };
