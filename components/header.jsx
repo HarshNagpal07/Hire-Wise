@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
-import { ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarIcon } from "lucide-react";
+import { ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarIcon, StarsIcon } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
           />
         </Link>
 
-        <div className="flex items-center space-x-2 md:space-x-4">
+        <div className="flex items-center space-x-2 md:space-x-8">
           <SignedIn>
             <Link href={"/dashboard"}>
               <Button>
@@ -38,7 +38,7 @@ const Header = () => {
 
             <DropdownMenuTrigger>
               <Button>
-                <StarIcon className="h-4 w-4" />
+                <StarsIcon className="h-4 w-4" />
                 <span className="hidden md:block">Growth Tools</span>
                 <ChevronDown className="h-4 w-4" />
               </Button>
