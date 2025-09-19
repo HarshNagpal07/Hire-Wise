@@ -17,7 +17,7 @@ const Header = () => {
             src={"/logo.png"}
             alt="HireWise Logo"
             width={200}
-            height={60}
+            height={80}
             className="h-12 w-auto object-contain"
             priority 
           />
