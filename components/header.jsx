@@ -76,7 +76,16 @@ const Header = () => {
       </SignedOut>
 
       <SignedIn>
-        <UserButton />
+        <UserButton
+        appearance={{
+          elements: {
+            avatarBox: "w-10 h-10",
+            userButtonPopoverCard: "shadow-xl",
+            userPreviewMainIdentifier: "font-semibold",
+          },
+        }}
+        afterSignOutUrl="/"
+        />
       </SignedIn>
         </div>
       </nav>
